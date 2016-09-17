@@ -31,7 +31,6 @@ body{
     background: -o-radial-gradient(#012a38,#00111a); /* Opera 11.6 to 12.0 */
     background: -moz-radial-gradient(#012a38,#00111a); /* Firefox 3.6 to 15 */
     background: radial-gradient(#012a38,#00111a);
-    transition: background 0.3s ease;
 }
 
 #main{
@@ -103,7 +102,7 @@ body{
 .post-body{
     clear: both;
     width: 100%;
-    background: #004466;
+    background: 	rgba(31, 58, 71, 0.5);
 }
 
 .post-body .content{
@@ -138,6 +137,7 @@ body{
 }
 
 .post-footer input[type="text"] {
+    font-family: MuseoSans;
     padding: 10px;
     border: none;
     border-bottom: solid 3px #c9c9c9;
