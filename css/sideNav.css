@@ -1,0 +1,113 @@
+@font-face{ font-family: SIMPLIFICA; src: url('fonts/SIMPLIFICA Typeface.ttf'); }
+@font-face{ font-family: MuseoSans; src: url('fonts/MuseoSans_500.otf'); }
+@font-face{ font-family: Novecentosanswide-Light; src: url('fonts/Novecentosanswide-Light.otf'); }
+@font-face{ font-family: Novecentosanswide-Book; src: url('fonts/Novecentosanswide-Book.otf'); }
+@font-face{ font-family: Novecentosanswide-Normal; src: url('fonts/Novecentosanswide-Normal.otf'); }
+@font-face{ font-family: Novecentosanswide-Medium; src: url('fonts/Novecentosanswide-Medium.otf'); }
+@font-face{ font-family: Novecentosanswide-DemiBold; src: url('fonts/Novecentosanswide-DemiBold.otf'); }
+@font-face{ font-family: Novecentosanswide-Bold; src: url('fonts/Novecentosanswide-Bold.otf'); }
+
+/*
+    Colors:
+    background: #02394b;
+    buttons background: #035e7c;
+
+*/
+
+span{
+    padding: 10px;
+    transition: 0.3s;
+}
+span img{
+    width: 50px;
+    height: 50px;
+}
+
+span:hover{
+    background: #035e7c;
+}
+
+
+.sideNav{
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #02394b;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; 
+}
+
+.sideNav ul {
+    position: absolute;
+    bottom: 0px;
+
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 90%;
+}
+
+.sideNav ul li{
+    height: 13.5%;
+    transition: 0.3f;
+}
+
+.sideNav a{
+    padding: 30px 8px 30px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: MuseoSans;
+}
+
+.sideNav ul li:last-child{
+    background: #012632;
+}
+
+.sideNav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    background: #035e7c;
+}
+
+.sideNav a img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.sideNav .closeBtn{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 8px 10px 8px 67px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #10f9b7;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    margin-left: 250px;
+    padding: 20px;
+}
+
+#btnOpen{
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+@media screen and (max-height: 450px) {
+    .sideNav {padding-top: 15px;}
+    .sideNav a {font-size: 18px;}
+}
+
+
+

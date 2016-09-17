@@ -1,0 +1,38 @@
+.post-footer input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-bottom: solid 3px #c9c9c9;
+    transition: border 0.3s;
+    width: 80%;
+    outline: none;
+    float: left;
+    margin-left: 2px;
+}
+.post-footer input[type="text"]:focus {
+    border-bottom: solid 3px #969696;
+}
+
+button[type="button"]{
+    padding: 10px;
+    border: none;
+    background: inherit;
+    background-position: 50%;
+    outline: none;
+    transition: 0.3s;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    float: left;
+}
+
+button[type="button"]:hover{
+    background: #c9c9c9;
+}
+
+button[type="button"] img{
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+}
