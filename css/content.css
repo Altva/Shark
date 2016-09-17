@@ -23,7 +23,12 @@
 */
 
 body{
-    background: #012a38;
+    background: #012a38; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#012a38,#00111a); /* Safari */
+    background: -o-radial-gradient(#012a38,#00111a); /* Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#012a38,#00111a); /* Firefox 3.6 to 15 */
+    background: radial-gradient(#012a38,#00111a);
+    transition: background 0.3s ease;
 }
 
 #main{
@@ -96,7 +101,6 @@ body{
 
 .post-body .content{
     padding: 30px;
-
 }
 
 .post-body .content img{

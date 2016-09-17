@@ -17,6 +17,8 @@
 span{
     padding: 10px;
     transition: 0.3s;
+    visibility: hidden;
+    transition: visibility 0.3s;
 }
 span img{
     width: 50px;
@@ -35,7 +37,7 @@ span:hover{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #02394b;
+    /*background-color: #02394b;*/
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s; 
@@ -62,7 +64,7 @@ span:hover{
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.3s ease;
     font-family: MuseoSans;
 }
 
@@ -93,7 +95,7 @@ span:hover{
 
 #main {
     transition: margin-left 0.5s;
-    margin-left: 250px;
+    /*margin-left: 100px;*/
     padding: 20px;
 }
 
