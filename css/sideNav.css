@@ -39,6 +39,7 @@ span:hover{
     left: 0;
     /*background-color: #02394b;*/
     overflow-x: hidden;
+    overflow-y: hidden;
     padding-top: 60px;
     transition: 0.5s; 
 }
