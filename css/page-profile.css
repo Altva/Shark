@@ -12,10 +12,13 @@
     background-size: 100%;
     background-repeat: no-repeat; 
     border-radius: 0px 0px 3px 3px;
+    border: solid 1px var(--shark-dark-blue);
+    
 }
 
     #cover-picture table{
-        margin: 0px 0px 0px 30px;
+        margin: 0px 0px 0px 10%;
+        width: 80%;
     }
 
 #cover-picture table tr:first-child{
@@ -29,8 +32,19 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     border-radius: 3px;
+    
+    box-shadow: 0px 0px 10px black;
 }
 
 #profile-title{
+    padding-left: 30px;  
+    font-size: 26px;
+    color: var(--shark-light-green);
+    text-shadow: 0px 0px 20px black;
+}
 
+#profile-description{
+    font-size: 12px;
+    color: white;
+    text-shadow: 0px 0px 20px black;
 }
