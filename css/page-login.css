@@ -37,6 +37,7 @@ h1{
 
 .login input[type="text"]{
     width: 50%;
+    margin-bottom: 10px;
 }
 .login button{
     width: 25%;

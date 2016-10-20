@@ -25,6 +25,10 @@ body{
 
 /*Diseno de los controles*/
 
+.shark-text-dark{
+    margin-bottom: 10px;
+}
+
 #date{
     padding: 8px !important; 
 }

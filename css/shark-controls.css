@@ -35,8 +35,7 @@ input.shark-text, textarea.shark-text, select.shark-text {
     padding: 10px;
     border: none;
     border-bottom: solid 3px #c9c9c9;
-    outline: none;
-    margin-bottom: 10px; 
+    outline: none; 
     box-sizing: border-box;
 
     transition: border 0.3s ease;    
@@ -51,7 +50,6 @@ input.shark-text-dark, textarea.shark-text-dark, select.shark-text-dark {
     border-bottom: solid 3px rgba(16, 249, 183, 0.05);
     transition: border 0.3s ease;
     outline: none;
-    margin-bottom: 10px; 
     background: rgba(16, 249, 183, 0.1);
 }
 
@@ -62,3 +60,82 @@ input.shark-text-dark, textarea.shark-text-dark, select.shark-text-dark {
 .shark-text-dark:focus {
     border-bottom: solid 3px rgba(16, 249, 183, 0.5);;
 }
+
+.left-triangle{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid white;
+}
+
+#search-bar-dialog {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+    #search-bar-dialog .content{
+        float: left;
+        width: 200px;
+        padding: 10px;
+        background: white;
+        border-radius: 10px;
+    }
+
+    #search-bar-dialog .shark-text{
+        width: 100%;
+    }
+
+    #search-bar-dialog .left-triangle{
+        margin-top: 20px;
+        float: left;
+    }
+
+    #search-bar-dialog.visible{
+        visibility: visible;
+        opacity: 1;
+    }
+
+#notification-dialog{
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    
+}
+
+    #notification-dialog .left-triangle{
+        margin-top: 20px;
+        float: left;
+    }
+
+    #notification-dialog .content{
+        float: left;
+        width: 250px;
+        height: 250px;
+        padding: 40px;
+        background: white;
+        border-radius: 10px;
+        overflow: scroll;
+        scrollbar
+    }
+
+    #notification-dialog .notification{
+        border-bottom: solid 1px #ccc;
+        clear: both;
+    }
+
+    #notification-dialog .notification-picture{
+        float:left;
+        width: 40px;
+        height: 40px;
+        background-position: 50% 50%;
+        background-size: 80px;
+    }
+
+    #notification-dialog.visible{
+        visibility: visible;
+        opacity: 1;
+    }

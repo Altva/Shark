@@ -7,11 +7,12 @@
         <link rel="stylesheet" type="text/css" href="css/shark-side-nav.css">
         <link rel="stylesheet" type="text/css" href="css/page-profile.css">
         <link rel="icon" href="favicon.ico" sizes="16x16"/>
-        <script src="js/animation.js"></script>
+        <script src="js/jquery.js"> </script>
+        <script src="js/side-bar.js"></script>
         <title> Shark </title>
     </head>
     <body>
-        <div class="menu" onclick="changeMenu(this)">
+        <div class="menu">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -21,7 +22,7 @@
                 <li class="li-filler"></li>
                 <li><a href="main.html"><img src="img/shark1.png"></a></li>
                 <li><a href="main.html"><img src="img/6a.png"></a></li>
-                <li><a href="#"><img src="img/4a.png"></a></li>
+                <li><a id="search-side-button"><img src="img/4a.png"></a></li>
                 <li><a href="profile.html"><img src="img/1a.png"></a></li>
                 <li><a href="#"><img src="img/2a.png"></a></li>
                 <li><a href="#"><img src="img/3a.png"></a></li>
@@ -29,8 +30,16 @@
             </ul>
         </div>
 
+        <div id="search-bar-dialog">
+            <div class="left-triangle"> </div>
+            <div class="content"> 
+                <input class="shark-text" type="text" placeholder="Search: #tag, ...">
+            </div>
+        </div>
+
+
         <div id="main-header">
-            <div id="cover-picture" style="background-image: url('img/mike-cover-2.jpg');">
+            <div id="cover-picture" style="background-image: url('img/mike-cover.jpg');">
                 <table>
                     <tbody>
                         <tr></tr>
