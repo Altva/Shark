@@ -1,3 +1,16 @@
+
+/***
+Jumps:
+    ~Common-Controls
+    ~Side-Bar
+    ~Search-Dialog
+    ~Notification-Dialog
+***/
+
+/***
+    ~Common-Controls
+***/
+
 .shark-button{
     font-family: MuseoSans;
     height: 40px;
@@ -61,6 +74,19 @@ input.shark-text-dark, textarea.shark-text-dark, select.shark-text-dark {
     border-bottom: solid 3px rgba(16, 249, 183, 0.5);;
 }
 
+/***
+    ~Side-Bar
+***/
+
+
+/***
+    ~Search-Dialog
+***/
+
+.dialog{
+    position: fixed;
+}
+
 .left-triangle{
     width: 0;
     height: 0;
@@ -93,34 +119,38 @@ input.shark-text-dark, textarea.shark-text-dark, select.shark-text-dark {
         float: left;
     }
 
-    #search-bar-dialog.visible{
+    #search-bar-dialog.visible, #notification-dialog.visible{
         visibility: visible;
         opacity: 1;
     }
 
+/***
+    ~Notification-Dialog
+***/
+
 #notification-dialog{
-    position: fixed;
-    visibility: visible;
-    opacity: 1;
+
+    visibility: hidden;
+    opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 0;
     
 }
 
     #notification-dialog .left-triangle{
-        margin-top: 20px;
+        margin-top: 110px;
         float: left;
         border-right-color: var(--shark-dark-blue);
-        z-index: 1;
+        z-index: 2;
     }
 
     #notification-dialog .content{
         float: left;
         width: 250px;
-        height: 250px;
+        height: 239px;
 
         background: var(--shark-dark-blue);
-        box-shadow: 0px 0px 5px black;
+        /*box-shadow: 1px 1px 5px black;*/
         border-radius: 10px;
         overflow-y: scroll;
     }
@@ -131,6 +161,7 @@ input.shark-text-dark, textarea.shark-text-dark, select.shark-text-dark {
         height: 80px;
         padding: 10px;
         overflow: hidden;
+        cursor: pointer;
     }
 
     #notification-dialog .notification:hover{
@@ -159,11 +190,6 @@ input.shark-text-dark, textarea.shark-text-dark, select.shark-text-dark {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: var(--shark-dark-green);
         font-size: 10px;
-    }
-
-    #notification-dialog.visible{
-        visibility: visible;
-        opacity: 1;
     }
 
     /* Let's get this party started */
