@@ -37,6 +37,29 @@
 
 }
 
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--shark-dark-blue);
+}
+
+/* Track */
+::-webkit-scrollbar-track { 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--shark-dark-green);
+    
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: var(--shark-light-blue);
+}
+
 *{
     box-sizing: border-box;
 }
@@ -64,7 +87,7 @@ h1{
 .post-head{
     float: left;
     width: 100%;
-    background: #00111a;
+    background: var(--post-header-bg);
 }
 
     .post-head .content {

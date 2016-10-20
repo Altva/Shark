@@ -103,39 +103,86 @@ input.shark-text-dark, textarea.shark-text-dark, select.shark-text-dark {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.3s ease;
+    z-index: 0;
     
 }
 
     #notification-dialog .left-triangle{
         margin-top: 20px;
         float: left;
+        border-right-color: var(--shark-dark-blue);
+        z-index: 1;
     }
 
     #notification-dialog .content{
         float: left;
         width: 250px;
         height: 250px;
-        padding: 40px;
-        background: white;
+
+        background: var(--shark-dark-blue);
+        box-shadow: 0px 0px 5px black;
         border-radius: 10px;
-        overflow: scroll;
-        scrollbar
+        overflow-y: scroll;
     }
 
     #notification-dialog .notification{
-        border-bottom: solid 1px #ccc;
+        border-bottom: solid 1px #002133;
+        clear: both;
+        height: 80px;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    #notification-dialog .notification:hover{
+        background: #012a38;
         clear: both;
     }
 
     #notification-dialog .notification-picture{
         float:left;
+        margin-top: 7px;
         width: 40px;
         height: 40px;
         background-position: 50% 50%;
         background-size: 80px;
+        border-radius: 2px;
+    }
+
+    #notification-dialog .notification-title{
+        margin: 5px 0px 0px 60px;
+        font-family: MuseoSans, Verdana, Geneva, Tahoma, sans-serif;
+        color: var(--shark-light-green);
+    }
+
+    #notification-dialog .notification-description{
+        margin: 5px 0px 0px 60px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: var(--shark-dark-green);
+        font-size: 10px;
     }
 
     #notification-dialog.visible{
         visibility: visible;
         opacity: 1;
+    }
+
+    /* Let's get this party started */
+    #notification-dialog .content::-webkit-scrollbar {
+        width: 6px;
+    }
+    
+    /* Track */
+    #notification-dialog .content::-webkit-scrollbar-track { 
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    
+    /* Handle */
+    #notification-dialog .content::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: var(--shark-dark-green);
+    }
+    #notification-dialog .content::-webkit-scrollbar-thumb:window-inactive {
+        background: var(--shark-dark-blue);
     }

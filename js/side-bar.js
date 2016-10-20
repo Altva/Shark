@@ -34,4 +34,6 @@ $(document).ready( function(){
         $('#search-bar-dialog').css({"top": top, "left": buttonWidth});
     });
 
+    $('#notification-dialog');
+
 });
