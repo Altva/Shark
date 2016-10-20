@@ -103,3 +103,6 @@ create table Usuario_Notificacion(
 rename table megusta to me_gusta;
 rename table preguntaseguridad to pregunta_seguridad;
 rename table respuestasseguridad to respuesta_seguridad;
+
+alter table notificacion add column idUsuario int unsigned not null;
+alter table notificacion add foreign key (idUsuario) references Usuario(idUsuario);
