@@ -1,0 +1,65 @@
+
+/* 
+   pink: f16f93;
+    background: radial-gradient(#012a38,#00111a);
+    text: #10f9b7;
+    input text border 1: #c9c9c9;
+    input text border 2: #969696;
+
+*/
+
+body{
+    font-family: MuseoSans;
+    background-image: url("../img/gradient-bg.jpg");
+    background-size: 100vw;
+}
+
+#main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*Diseno de los controles*/
+
+#date{
+    padding: 8px !important; 
+}
+
+#gender {
+    padding: 9px !important; 
+}
+
+#gender option{
+    color: initial;
+}
+
+#btnLogin{
+    position: absolute;
+    right: 8px;
+    top: 8;
+    padding: 0px 20px 0px 20px;
+}
+
+#btnSignin{
+    width: 40%;
+    font-size: 16px;
+    color: var(--shark-pink);
+}
+
+/*Acomodar los controles*/
+
+#username, #title, #password, #confirm, #country, #gender{
+    width: 49%;
+}
+
+#date{
+    width: 49%;
+}
+
+#email, #description{
+    width: 100%;
+}

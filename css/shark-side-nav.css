@@ -1,0 +1,144 @@
+@font-face{ font-family: MuseoSans; src: url('fonts/MuseoSans_500.otf'); }
+
+/*
+    Colors:
+    pink: f16f93;
+    icons: #10f9b7;
+    background: #02394b;
+    buttons background: #035e7c;
+
+*/
+
+.side-nav{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*background-color: #02394b;*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 60px;
+    transition: 0.5s; 
+}
+
+    .side-nav ul {
+        position: absolute;
+        top: 0px;
+
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .side-nav ul li{
+        height: 12.5vh;
+        transition: 0.3f;
+    }
+
+    .side-nav a{
+        padding: 30px 8px 30px 20px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: background 0.3s ease;
+        font-family: MuseoSans;
+    }
+    /*
+    .side-nav ul li:last-child{
+        background: #012632;
+    }
+    */
+
+    .side-nav li:hover{
+        color: #f1f1f1;
+        background: #035e7c;
+    }
+
+    .side-nav a img{
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .side-nav .closeBtn{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding: 8px 10px 8px 67px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: #10f9b7;
+    }
+
+#main {
+    transition: margin-left 0.5s;
+    /*margin-left: 100px;*/
+    padding: 20px;
+}
+
+#btnOpen{
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+
+.menu{
+    position: fixed;
+    padding: 30px 35px 30px 30px;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    .menu:hover{
+        background: #035e7c;
+    }
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #10f9b7;
+    margin: 6px 0;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+    .change .bar1{
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+        border-radius: 0px;
+        background-color: #f16f93;
+    }
+    .change .bar2{
+        opacity: 0;
+        border-radius: 0px;
+    }
+    .change .bar3{
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(45deg) translate(-8px, -8px);
+        border-radius: 0px;
+        background-color: #f16f93;
+    }
+
+@media screen and (max-height: 450px) {
+    .side-nav {padding-top: 15px;}
+    .side-nav a {font-size: 18px;}
+    /*
+    .side-nav a img{
+        width: 20px;
+        height: 20px;
+    }
+    */
+}
+
+
+

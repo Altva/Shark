@@ -1,4 +1,4 @@
-var isMenuOpen = true;
+var isMenuOpen = false;
 
 function openNav(){
     isMenuOpen = true;

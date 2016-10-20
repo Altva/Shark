@@ -1,0 +1,36 @@
+#main-header {
+    font-family: MuseoSans, Verdana, Geneva, Tahoma, sans-serif;
+    color: #ccc;
+    margin: 0px 0px 45px 0px;
+}
+
+#cover-picture{
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    border-radius: 0px 0px 3px 3px;
+}
+
+    #cover-picture table{
+        margin: 0px 0px 0px 30px;
+    }
+
+#cover-picture table tr:first-child{
+    height: 175px;
+}
+
+#profile-picture{
+    width: 150px;
+    height: 150px;
+    background-size: 300px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+}
+
+#profile-title{
+
+}

@@ -1,0 +1,64 @@
+.shark-button{
+    font-family: MuseoSans;
+    height: 40px;
+    /*color: #10f9b7;*/
+    color: var(--shark-light-green);
+    background: #012a38;
+    border: none;
+    outline: none;
+    transition: background 0.3s;
+    border-bottom: solid 3px #00111a;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+.shark-button:hover{
+    background: #035e7c;
+}
+
+.shark-button:focus{
+    border-bottom: solid 3px #10f9b7;
+}
+
+.shark-empty-button{
+    border: none;
+    background: inherit;
+    outline: none;
+    transition: background 0.3s ease;
+    padding: 0px;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+input.shark-text, textarea.shark-text, select.shark-text {
+    font-family: MuseoSans;
+    padding: 10px;
+    border: none;
+    border-bottom: solid 3px #c9c9c9;
+    outline: none;
+    margin-bottom: 10px; 
+    box-sizing: border-box;
+
+    transition: border 0.3s ease;    
+}
+
+input.shark-text-dark, textarea.shark-text-dark, select.shark-text-dark {
+    color: white;
+    box-sizing: border-box;
+    font-family: MuseoSans;
+    padding: 10px;
+    border: none;
+    border-bottom: solid 3px rgba(16, 249, 183, 0.05);
+    transition: border 0.3s ease;
+    outline: none;
+    margin-bottom: 10px; 
+    background: rgba(16, 249, 183, 0.1);
+}
+
+.shark-text:focus {
+    border-bottom: solid 3px #969696;
+}
+
+.shark-text-dark:focus {
+    border-bottom: solid 3px rgba(16, 249, 183, 0.5);;
+}
