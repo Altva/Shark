@@ -34,6 +34,7 @@
     }
 
     .side-nav ul li{
+        position: relative;
         height: 12.5vh;
         transition: 0.3f;
     }
@@ -74,6 +75,18 @@
         margin-left: 50px;
         color: #10f9b7;
     }
+
+.notification-counter{
+    position: absolute;
+    top: 60px;
+    left: 55px;
+    
+    background-color: rgba(212, 19, 13, 1);
+    color: #fff;
+    border-radius: 3px;
+    padding: 1px 3px;
+    font: 8px Verdana;
+}
 
 #main {
     transition: margin-left 0.5s;
