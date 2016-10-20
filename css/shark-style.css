@@ -76,11 +76,7 @@ h1{
     .post-head table{
         width: 100%;
     }
-
-    .post-head .profile-picture{
-        width: 100px;
-    }
-
+    
     .post-head .content a{
         background-repeat: no-repeat;
         background-position: 50%;
@@ -99,16 +95,14 @@ h1{
     .post-head .title{
         font-size: 16px;
         font-family: MuseoSans;
-        float: left;
-        margin-top: 25px;
-        margin-left: 5%; 
+        clear: both;
         color: var(--shark-light-green);
     }
 
     .post-head .subtitle{
         font-size: 12px;
         font-family: MuseoSans;
-        clear: left;
+        /*clear: left;*/
         padding-top: 10px; 
         /*margin-left: 115px;*/ 
         color: var(--shark-dark-green);
